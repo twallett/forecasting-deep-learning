@@ -36,7 +36,7 @@ $$
 ### Recurrent Neural Networks (RNN)   
 
 $$
-\mathbf{h}_t = \phi\left(\mathbf{W}_x \mathbf{x}_t + \mathbf{W}_h \mathbf{h}_{t} + \mathbf{b}\right)
+\mathbf{h}_t = \phi\left(\mathbf{W}_x \mathbf{x}_t + \mathbf{W}_h \mathbf{h}_t-1 + \mathbf{b}\right)
 $$
 
 - $\mathbf{x}_t$: input at time step $t$  
