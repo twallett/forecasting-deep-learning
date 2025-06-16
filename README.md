@@ -16,9 +16,7 @@ This repository contains Python code for forecasting financial and economic indi
 
 ## Deep Learning Models
 
-1. Multi-Layer Perceptron (MLP)
-
-**Forward Pass**
+### Multi-Layer Perceptron (MLP)
 
 $$
 \mathbf{h} = \sigma\left(\mathbf{W}^{[1]} \mathbf{x} + \mathbf{b}^{[1]}\right)
@@ -33,7 +31,7 @@ $$
 - $\mathbf{W}^{[2]}, \mathbf{b}^{[2]}$: weights and bias for the output layer  
 - $\sigma$: activation function (e.g., ReLU)
 
-2. Recurrent Neural Networks (RNN)   
+### Recurrent Neural Networks (RNN)   
 
 $$
 \mathbf{h}_t = \phi\left(\mathbf{W}_x \mathbf{x}_t + \mathbf{W}_h \mathbf{h}_{t-1} + \mathbf{b}\right)
@@ -44,7 +42,7 @@ $$
 - $\mathbf{W}_x, \mathbf{W}_h, \mathbf{b}$: weight matrices and bias  
 - $\phi$: activation function (e.g., tanh)
 
-- Long Short-Term Memory (LSTM)
+### Long Short-Term Memory (LSTM)
 
 $$
 \begin{align*}
@@ -64,7 +62,7 @@ $$
 - $\odot$: element-wise multiplication  
 - $\tanh$: hyperbolic tangent
 
-4. Gated Recurrent Unit (GRU)
+### Gated Recurrent Unit (GRU)
 
 $$
 \begin{align*}
@@ -79,6 +77,8 @@ $$
 - $\mathbf{h}_{t-1}$: previous hidden state  
 - $\sigma$: sigmoid activation  
 - $\tanh$: hyperbolic tangent
+
+## Financial and Economic Indicators
 
 ### 01-Ticker
 
