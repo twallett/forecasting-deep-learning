@@ -16,6 +16,8 @@ This repository contains Python code for forecasting financial and economic indi
 
 ## Deep Learning Models
 
+The repository implements various deep learning models commonly used for forecasting tasks. Below are the mathematical representations of these models:
+
 ### Multi-Layer Perceptron (MLP)
 
 $$
@@ -34,7 +36,7 @@ $$
 ### Recurrent Neural Networks (RNN)   
 
 $$
-\mathbf{h}_t = \phi\left(\mathbf{W}_x \mathbf{x}_t + \mathbf{W}_h \mathbf{h}_{t-1} + \mathbf{b}\right)
+\mathbf{h}_t = \phi\left(\mathbf{W}_x \mathbf{x}_t + \mathbf{W}_h \mathbf{h}_{t{-}1} + \mathbf{b}\right)
 $$
 
 - $\mathbf{x}_t$: input at time step $t$  
