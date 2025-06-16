@@ -80,26 +80,28 @@ $$
 
 ## Financial and Economic Indicators
 
+This repository focuses on forecasting various financial and economic indicators using deep learning models. The indicators include:
+
 ### 01-Ticker
 
-This folder contains code for forecasting stock prices using deep learning models.
+`yfinance`
 
 ### 02-Unemployment
 
-This folder contains code for forecasting unemployment rates using deep learning models.
+FRED
 
 ### 03-Revenue
 
-This folder contains code for forecasting company revenue using deep learning models.
+Walmart
 
 ### 04-Real Estate
 
-This folder contains code for forecasting real estate prices using deep learning models.
-
+07-19 New York Real Estate prices 
 
 
 ## References
 
+Tensorflow Python API documentation ([Web Link](https://www.tensorflow.org/api_docs/python/tf/all_symbols))
 
 ## Usage
 
