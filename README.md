@@ -18,13 +18,9 @@ This repository contains Python code for forecasting financial and economic indi
 
 ### Multi-Layer Perceptron (MLP)
 
-$$
-\mathbf{h} = \sigma\left(\mathbf{W}^{[1]} \mathbf{x} + \mathbf{b}^{[1]}\right)
-$$
+$\mathbf{h} = \sigma\left(\mathbf{W}^{[1]} \mathbf{x} + \mathbf{b}^{[1]}\right)$
 
-$$
-\mathbf{y} = \mathbf{W}^{[2]} \mathbf{h} + \mathbf{b}^{[2]}
-$$
+$\mathbf{y} = \mathbf{W}^{[2]} \mathbf{h} + \mathbf{b}^{[2]}$
 
 - $\mathbf{x}$: input vector  
 - $\mathbf{W}^{[1]}, \mathbf{b}^{[1]}$: weights and bias for the hidden layer  
@@ -33,9 +29,7 @@ $$
 
 ### Recurrent Neural Networks (RNN)   
 
-$$
-\mathbf{h}_t = \phi\left(\mathbf{W}_x \mathbf{x}_t + \mathbf{W}_h \mathbf{h}_{t-1} + \mathbf{b}\right)
-$$
+$\mathbf{h}_t = \phi\left(\mathbf{W}_x \mathbf{x}_t + \mathbf{W}_h \mathbf{h}_{t-1} + \mathbf{b}\right)$
 
 - $\mathbf{x}_t$: input at time step $t$  
 - $\mathbf{h}_t$: hidden state at time $t$  
