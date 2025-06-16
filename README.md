@@ -82,22 +82,29 @@ $$
 
 This repository focuses on forecasting various financial and economic indicators using deep learning models. The indicators include:
 
-### 01-Ticker
+### 01 - Ticker (`yfinance`)
 
-`yfinance`
+- **Type:** Financial Indicator  
+- **Description:** Stock price time series obtained via the `yfinance` library. Stock prices reflect investor sentiment, company performance, and macroeconomic conditions.  
+- **Utility:** Accurate forecasting enables informed trading strategies, risk management, and portfolio optimization, especially for short- to medium-term investment decisions.
 
-### 02-Unemployment
+### 02 - Unemployment (FRED)
 
-FRED
+- **Type:** Economic Indicator  
+- **Description:** The unemployment rate is sourced from the Federal Reserve Economic Data (FRED). It measures the percentage of the labor force that is jobless and actively seeking work.  
+- **Utility:** Predicting unemployment is vital for policymakers and economists to anticipate recessions, guide monetary/fiscal policy, and understand consumer spending potential.
 
-### 03-Revenue
+### 03 - Revenue (Walmart)
 
-Walmart
+- **Type:** Financial Indicator  
+- **Description:** Walmart's reported revenue over time, typically on a quarterly basis. Revenue data reflects the company's operational performance and consumer demand trends.  
+- **Utility:** Forecasting revenue helps stakeholders evaluate business health, anticipate earnings, and make investment or strategic planning decisions.
 
-### 04-Real Estate
+### 04 - Real Estate (07-19 New York Real Estate Prices)
 
-07-19 New York Real Estate prices 
-
+- **Type:** Economic Indicator  
+- **Description:** Historical prices of real estate in New York from 2007 to 2019. These reflect housing market trends, demand-supply dynamics, and broader economic conditions.  
+- **Utility:** Real estate forecasting aids investors, urban planners, and policymakers in anticipating market cycles, adjusting interest rates, and allocating resources for development.
 
 ## References
 
