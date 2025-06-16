@@ -29,6 +29,7 @@ Let:
 $$
 \mathbf{h} = \sigma\left(\mathbf{W}^{[1]} \mathbf{x} + \mathbf{b}^{[1]}\right)
 $$
+
 $$
 \mathbf{y} = \mathbf{W}^{[2]} \mathbf{h} + \mathbf{b}^{[2]}
 $$
@@ -88,7 +89,6 @@ $$
 \mathbf{h}_t &= (1 - \mathbf{z}_t) \odot \mathbf{h}_{t-1} + \mathbf{z}_t \odot \tilde{\mathbf{h}}_t
 \end{align*}
 $$
-
 
 
 ### 01-Ticker
