@@ -28,7 +28,6 @@ $$
 \mathbf{y} = \mathbf{W}^{[2]} \mathbf{h} + \mathbf{b}^{[2]}
 $$
 
-Let:
 - $\mathbf{x}$: input vector  
 - $\mathbf{W}^{[1]}, \mathbf{b}^{[1]}$: weights and bias for the hidden layer  
 - $\mathbf{W}^{[2]}, \mathbf{b}^{[2]}$: weights and bias for the output layer  
@@ -36,29 +35,16 @@ Let:
 
 2. Recurrent Neural Networks (RNN)   
 
-**RNN Cell**
+$$
+\mathbf{h}_t = \phi\left(\mathbf{W}_x \mathbf{x}_t + \mathbf{W}_h \mathbf{h}_{t-1} + \mathbf{b}\right)
+$$
 
-Let:
 - $\mathbf{x}_t$: input at time step $t$  
 - $\mathbf{h}_t$: hidden state at time $t$  
 - $\mathbf{W}_x, \mathbf{W}_h, \mathbf{b}$: weight matrices and bias  
 - $\phi$: activation function (e.g., tanh)
 
-$$
-\mathbf{h}_t = \phi\left(\mathbf{W}_x \mathbf{x}_t + \mathbf{W}_h \mathbf{h}_{t-1} + \mathbf{b}\right)
-$$
-
 - Long Short-Term Memory (LSTM)
-
-**LSTM Cell**
-
-Let:
-- $\mathbf{x}_t$: input at time $t$  
-- $\mathbf{h}_{t-1}$: previous hidden state  
-- $\mathbf{c}_{t-1}$: previous cell state  
-- $\sigma$: sigmoid activation  
-- $\odot$: element-wise multiplication  
-- $\tanh$: hyperbolic tangent
 
 $$
 \begin{align*}
@@ -71,15 +57,14 @@ $$
 \end{align*}
 $$
 
-- Gated Recurrent Unit (GRU)
-
-**GRU Cell**
-
-Let:
 - $\mathbf{x}_t$: input at time $t$  
 - $\mathbf{h}_{t-1}$: previous hidden state  
+- $\mathbf{c}_{t-1}$: previous cell state  
 - $\sigma$: sigmoid activation  
+- $\odot$: element-wise multiplication  
 - $\tanh$: hyperbolic tangent
+
+4. Gated Recurrent Unit (GRU)
 
 $$
 \begin{align*}
@@ -90,6 +75,10 @@ $$
 \end{align*}
 $$
 
+- $\mathbf{x}_t$: input at time $t$  
+- $\mathbf{h}_{t-1}$: previous hidden state  
+- $\sigma$: sigmoid activation  
+- $\tanh$: hyperbolic tangent
 
 ### 01-Ticker
 
