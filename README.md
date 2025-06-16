@@ -16,15 +16,9 @@ This repository contains Python code for forecasting financial and economic indi
 
 ## Deep Learning Models
 
-- Multi-Layer Perceptron (MLP)
+1. Multi-Layer Perceptron (MLP)
 
 **Forward Pass**
-
-Let:
-- $\mathbf{x}$: input vector  
-- $\mathbf{W}^{[1]}, \mathbf{b}^{[1]}$: weights and bias for the hidden layer  
-- $\mathbf{W}^{[2]}, \mathbf{b}^{[2]}$: weights and bias for the output layer  
-- $\sigma$: activation function (e.g., ReLU)
 
 $$
 \mathbf{h} = \sigma\left(\mathbf{W}^{[1]} \mathbf{x} + \mathbf{b}^{[1]}\right)
@@ -34,7 +28,13 @@ $$
 \mathbf{y} = \mathbf{W}^{[2]} \mathbf{h} + \mathbf{b}^{[2]}
 $$
 
-- Recurrent Neural Networks (RNN)   
+Let:
+- $\mathbf{x}$: input vector  
+- $\mathbf{W}^{[1]}, \mathbf{b}^{[1]}$: weights and bias for the hidden layer  
+- $\mathbf{W}^{[2]}, \mathbf{b}^{[2]}$: weights and bias for the output layer  
+- $\sigma$: activation function (e.g., ReLU)
+
+2. Recurrent Neural Networks (RNN)   
 
 **RNN Cell**
 
