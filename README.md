@@ -139,11 +139,11 @@ This repository focuses on forecasting various financial and economic indicators
 - **Type:** Economic Indicator  
 - **Description:** Historical prices of real estate in New York from 2007 to 2019. These reflect housing market trends, demand-supply dynamics, and broader economic conditions.  
 - **Utility:** Real estate forecasting aids investors, urban planners, and policymakers in anticipating market cycles, adjusting interest rates, and allocating resources for development.
-- 
+
 <table>
   <tr>
     <td style="width: 50%;">
-      <img src="04-RealEstate/plots/GRU_forecast.png" width="100%">
+      <img src="04-RealEstate/plots/GRU_forecast.png" width="50%">
     </td>
   </tr>
 </table>
