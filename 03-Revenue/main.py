@@ -136,10 +136,11 @@ predictions = scaler.inverse_transform(np.concatenate(predictions).reshape(-1, 1
 plt.plot(range(0, len(train)), data['Price'][:split], label = 'Train')
 plt.plot(range(len(train), len(train) + len(test) - WINDOW - 1), data['Price'][split:-WINDOW-1], label = 'Test')
 plt.plot(range(len(train), len(train) + len(test) - WINDOW - 1), predictions, label = 'Predictions')
-plt.title(f'{MODEL} Forecast of Price')
+plt.title(f'{MODEL} Forecast of Walmart Revenue')
 plt.xlabel('Time')
-plt.ylabel('Price')
+plt.ylabel('Revenue')
 plt.legend()
+plt.savefig(f'plots/{MODEL}_forecast.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 # Metrics -------------------------------------------------------------------------------

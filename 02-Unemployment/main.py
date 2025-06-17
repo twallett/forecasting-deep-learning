@@ -137,6 +137,7 @@ plt.title(f'{MODEL} Forecast of Unemployment Rate')
 plt.xlabel('Time')
 plt.ylabel('Unemployment Rate')
 plt.legend()
+plt.savefig(f'plots/{MODEL}_forecast.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 # Metrics -------------------------------------------------------------------------------

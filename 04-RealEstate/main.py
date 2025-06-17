@@ -9,7 +9,6 @@ from torch.utils.data import Dataset, DataLoader
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 import pandas as pd
-import yfinance as yf
 import warnings
 
 warnings.filterwarnings("ignore")
@@ -133,10 +132,11 @@ predictions = scaler.inverse_transform(np.concatenate(predictions).reshape(-1, 1
 plt.plot(range(0, len(train)), data['Price'][:split], label = 'Train')
 plt.plot(range(len(train), len(train) + len(test) - WINDOW - 1), data['Price'][split:-WINDOW-1], label = 'Test')
 plt.plot(range(len(train), len(train) + len(test) - WINDOW - 1), predictions, label = 'Predictions')
-plt.title(f'{MODEL} Forecast of Price')
+plt.title(f'{MODEL} Forecast of Real Estate Price')
 plt.xlabel('Time')
-plt.ylabel('Price')
+plt.ylabel('Real Estate Price')
 plt.legend()
+plt.savefig(f'plots/{MODEL}_forecast.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 # Metrics -------------------------------------------------------------------------------

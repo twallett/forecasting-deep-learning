@@ -138,10 +138,11 @@ predictions = scaler.inverse_transform(np.concatenate(predictions).reshape(-1, 1
 plt.plot(range(0, len(train)), data['Close'][:split], label = 'Train')
 plt.plot(range(len(train), len(train) + len(test) - WINDOW - 1), data['Close'][split:-WINDOW-1], label = 'Test')
 plt.plot(range(len(train), len(train) + len(test) - WINDOW - 1), predictions, label = 'Predictions')
-plt.title(f'{MODEL} Forecast of Close')
+plt.title(f'{MODEL} Forecast of Close for {TICKER}')
 plt.xlabel('Time')
-plt.ylabel('Close')
+plt.ylabel('Close Price')
 plt.legend()
+plt.savefig(f'plots/{MODEL}_{TICKER}_forecast.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 # Metrics -------------------------------------------------------------------------------
