@@ -18,7 +18,9 @@ This repository contains Python code for forecasting financial and economic indi
 
 The repository implements various deep learning models commonly used for forecasting tasks. Below are the mathematical representations of these models:
 
-### Multi-Layer Perceptron (MLP) {.center}
+<div align="center">
+<h3>Multi-Layer Perceptron (MLP)</h3>
+</div>
 
 $$
 \mathbf{h} = \sigma\left(\mathbf{W}^{[1]} \mathbf{x} + \mathbf{b}^{[1]}\right)
@@ -33,7 +35,9 @@ $$
 - $\mathbf{W}^{[2]}, \mathbf{b}^{[2]}$: weights and bias for the output layer  
 - $\sigma$: activation function (e.g., ReLU)
 
-### Recurrent Neural Networks (RNN)   
+<div align="center">
+<h3>Recurrent Neural Networks (RNN)</h3>
+</div>
 
 ```math
 \mathbf{h}_t = \phi\left(\mathbf{W}_x \mathbf{x}_t + \mathbf{W}_h \mathbf{h}_{t-1} + \mathbf{b}\right)
@@ -44,7 +48,9 @@ $$
 - $\mathbf{W}_x, \mathbf{W}_h, \mathbf{b}$: weight matrices and bias  
 - $\phi$: activation function (e.g., tanh)
 
-### Long Short-Term Memory (LSTM)
+<div align="center">
+<h3>Long Short-Term Memory (LSTM)</h3>
+</div>
 
 ```math
 \begin{align*}
@@ -64,7 +70,9 @@ $$
 - $\odot$: element-wise multiplication  
 - $\tanh$: hyperbolic tangent
 
-### Gated Recurrent Unit (GRU)
+<div align="center">
+<h3>Gated Recurrent Unit (GRU)</h3>
+</div>
 
 ```math
 \begin{align*}
