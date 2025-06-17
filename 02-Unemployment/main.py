@@ -133,9 +133,9 @@ predictions = scaler.inverse_transform(np.concatenate(predictions).reshape(-1, 1
 plt.plot(range(0, len(train)), data['Unemployment'][:split], label = 'Train')
 plt.plot(range(len(train), len(train) + len(test) - WINDOW - 1), data['Unemployment'][split:-WINDOW-1], label = 'Test')
 plt.plot(range(len(train), len(train) + len(test) - WINDOW - 1), predictions, label = 'Predictions')
-plt.title(f'{MODEL} Forecast of Unemployment')
+plt.title(f'{MODEL} Forecast of Unemployment Rate')
 plt.xlabel('Time')
-plt.ylabel('Unemployment')
+plt.ylabel('Unemployment Rate')
 plt.legend()
 plt.show()
 
