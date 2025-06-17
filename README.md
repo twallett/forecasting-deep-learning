@@ -18,7 +18,7 @@ This repository contains Python code for forecasting financial and economic indi
 
 The repository implements various deep learning models commonly used for forecasting tasks. Below are the mathematical representations of these models:
 
-### Multi-Layer Perceptron (MLP)
+### Multi-Layer Perceptron (MLP) {.center}
 
 $$
 \mathbf{h} = \sigma\left(\mathbf{W}^{[1]} \mathbf{x} + \mathbf{b}^{[1]}\right)
