@@ -46,7 +46,7 @@ $$
 
 ### Long Short-Term Memory (LSTM)
 
-$$
+```math
 \begin{align*}
 \mathbf{f}_t &= \sigma(\mathbf{W}_f \mathbf{x}_t + \mathbf{U}_f \mathbf{h}_{t-1} + \mathbf{b}_f) \\
 \mathbf{i}_t &= \sigma(\mathbf{W}_i \mathbf{x}_t + \mathbf{U}_i \mathbf{h}_{t-1} + \mathbf{b}_i) \\
@@ -55,7 +55,7 @@ $$
 \mathbf{c}_t &= \mathbf{f}_t \odot \mathbf{c}_{t-1} + \mathbf{i}_t \odot \tilde{\mathbf{c}}_t \\
 \mathbf{h}_t &= \mathbf{o}_t \odot \tanh(\mathbf{c}_t)
 \end{align*}
-$$
+```
 
 - $\mathbf{x}_t$: input at time $t$  
 - $\mathbf{h}_{t-1}$: previous hidden state  
@@ -66,14 +66,14 @@ $$
 
 ### Gated Recurrent Unit (GRU)
 
-$$
+```math
 \begin{align*}
 \mathbf{z}_t &= \sigma(\mathbf{W}_z \mathbf{x}_t + \mathbf{U}_z \mathbf{h}_{t-1} + \mathbf{b}_z) \\
 \mathbf{r}_t &= \sigma(\mathbf{W}_r \mathbf{x}_t + \mathbf{U}_r \mathbf{h}_{t-1} + \mathbf{b}_r) \\
 \tilde{\mathbf{h}}_t &= \tanh(\mathbf{W}_h \mathbf{x}_t + \mathbf{U}_h (\mathbf{r}_t \odot \mathbf{h}_{t-1}) + \mathbf{b}_h) \\
 \mathbf{h}_t &= (1 - \mathbf{z}_t) \odot \mathbf{h}_{t-1} + \mathbf{z}_t \odot \tilde{\mathbf{h}}_t
 \end{align*}
-$$
+```
 
 - $\mathbf{x}_t$: input at time $t$  
 - $\mathbf{h}_{t-1}$: previous hidden state  
