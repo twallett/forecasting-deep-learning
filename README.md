@@ -7,7 +7,7 @@
 ├── 03-Revenue  
 ├── 04-RealEstate 
 ├── .gitignore
-├── .LICENSE
+├── LICENSE
 └── README.md
 ```
 
