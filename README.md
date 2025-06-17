@@ -143,7 +143,7 @@ This repository focuses on forecasting various financial and economic indicators
 <table>
   <tr>
     <td style="width: 50%;">
-      <img src="04-RealEstate/plots/GRU_forecast.png" width="50%">
+      <img src="04-RealEstate/plots/GRU_forecast.png" width="100%">
     </td>
   </tr>
 </table>
